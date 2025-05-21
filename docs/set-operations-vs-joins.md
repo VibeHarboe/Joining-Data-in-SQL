@@ -91,12 +91,34 @@ SELECT code FROM populations;
 * You're analyzing relationships between tables (e.g. customers + orders)
 * You need data from multiple columns in related tables
 * You’re aggregating or filtering based on joined data
+* You need to enrich data with dimensions (e.g. country names, user attributes)
+* You’re modeling relationships (1\:many, many\:many)
 
 **Use Set Operations when:**
 
-* You’re comparing or combining full query results (e.g. past vs current data)
+* You’re combining full query results (e.g. past vs current data)
 * You need to check for overlaps or differences between datasets
 * You want to merge time series or geographic subsets of the same schema
+* You have similar data from separate sources (e.g. logs, snapshots)
+* You want to compare datasets (INTERSECT / EXCEPT)
+* You need to union historic vs. current records
+
+---
+
+## Bonus: Set Operation Inside Join
+
+You can combine the two! Example:
+
+```sql
+WITH all_events AS (
+  SELECT * FROM 2012_events
+  UNION ALL
+  SELECT * FROM 2016_events
+)
+SELECT e.event, c.city
+FROM all_events e
+JOIN cities c ON e.city_id = c.id;
+```
 
 ---
 
