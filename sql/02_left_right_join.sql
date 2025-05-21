@@ -34,7 +34,25 @@ LIMIT 10;
 
 
 -- ========================================================
--- SECTION 3: RIGHT JOIN Equivalent to LEFT JOIN
+-- SECTION 3: LEFT JOIN with IS NULL - Unmatched City Records
+-- ========================================================
+
+-- Identify cities that do not have a corresponding country record
+-- Useful for data validation or identifying missing reference data
+SELECT 
+    c1.name AS city,
+    c1.country_code,
+    c1.city_proper_pop
+FROM cities AS c1
+LEFT JOIN countries AS c2
+  ON c1.country_code = c2.code
+WHERE c2.code IS NULL
+ORDER BY c1.name;
+
+
+
+-- ========================================================
+-- SECTION 4: RIGHT JOIN Equivalent to LEFT JOIN
 -- ========================================================
 
 -- Demonstrates how RIGHT JOIN can produce the same result as LEFT JOIN
