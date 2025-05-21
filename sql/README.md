@@ -3,6 +3,7 @@
 This folder contains a collection of advanced SQL join exercises based on real-world business and analytics scenarios. Each file is structured into clearly labeled sections with use cases ranging from operational hierarchies to business-critical analysis.
 
 
+
 ## 📄 SQL Files
 
 - [01_inner_join.sql](01_inner_join.sql) – INNER JOIN examples combining geographic, economic, and language data  
@@ -12,6 +13,7 @@ This folder contains a collection of advanced SQL join exercises based on real-w
 - [05_cross_join.sql](05_cross_join.sql) – CROSS JOIN queries to generate combinations and validate data completeness
 - [06_join_missing.sql](06_join_missing.sql) – Using JOINs to identify unmatched or missing records  
 - [07_join_comparison.sql](07_join_comparison.sql) – Comparison of INNER vs. OUTER JOIN results in multi-table scenarios  
+
 
 
 ## 📄 SQL Files Overview
