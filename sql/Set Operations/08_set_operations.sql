@@ -11,12 +11,9 @@
 -- Returns distinct rows only (no duplicates)
 SELECT code, year, gdp_percapita, inflation_rate
 FROM economies2015
-
 UNION
-
 SELECT code, year, gdp_percapita, inflation_rate
 FROM economies2019
-
 ORDER BY code, year;
 
 
@@ -27,22 +24,16 @@ ORDER BY code, year;
 -- Use UNION to return unique country-year combinations from two sources
 SELECT code, year
 FROM economies
-
 UNION
-
 SELECT country_code AS code, year
 FROM populations
-
 ORDER BY code, year;
 
 
 -- Use UNION ALL to return all values including duplicates
 SELECT code, year
 FROM economies
-
 UNION ALL
-
 SELECT country_code AS code, year
 FROM populations
-
 ORDER BY code, year;
