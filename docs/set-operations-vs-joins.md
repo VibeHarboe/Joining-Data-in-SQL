@@ -70,13 +70,17 @@ SELECT code FROM populations;
 
 ## 🔍 Key Differences
 
-| Feature        | JOINs                                    | Set Operations                             |
-| -------------- | ---------------------------------------- | ------------------------------------------ |
-| Combines       | Columns (horizontally)                   | Rows (vertically)                          |
-| Match based on | Foreign key / shared field               | Result sets must have same structure/order |
-| Returns        | Combined columns                         | Combined rows                              |
-| NULL behavior  | Depends on JOIN type                     | Preserved as in the underlying queries     |
-| Use case       | Data integration & relationship analysis | Comparing datasets or merging time periods |
+| Feature            | JOINs                                    | Set Operations                             |
+| ------------------ | ---------------------------------------- | ------------------------------------------ |
+| Combines           | Columns (horizontally)                   | Rows (vertically)                          |
+| Match based on     | Foreign key / shared field               | Result sets must have same structure/order |
+| Returns            | Combined columns                         | Combined rows                              |
+| NULL behavior      | Depends on JOIN type                     | Preserved as in the underlying queries     |
+| Use case           | Data integration & relationship analysis | Comparing datasets or merging time periods |
+| Merge Type         | Combine columns                          | Stack rows                                 |
+| Schema requirement | Can differ between tables                | Same column count & types                  | 
+| Common use case    | Data integration & enrichment            | De-duplication, comparison                 |
+| Output format      | Wider combined row                       | One column structure                       |
 
 ---
 
