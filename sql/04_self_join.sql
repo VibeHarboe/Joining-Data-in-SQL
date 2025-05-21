@@ -1,3 +1,8 @@
+-- 04_self_join.sql – SELF JOIN examples showcasing organizational hierarchies and time-based data comparison:
+-- Match employees to their managers within and across departments
+-- Compare population data for the same country across different years (e.g., 2010 vs 2015)
+-- Calculate and rank population growth percentages using self joins and CTEs
+
 -- ========================================================
 -- SECTION 1: SELF JOIN - Employees and Managers
 -- ========================================================
