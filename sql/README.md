@@ -62,7 +62,7 @@ This folder contains a collection of advanced SQL join exercises based on real-w
  
 * [08_union_set_operations.sql](08_set_operations.sql) – Set theory operations in SQL for comparing, combining, and filtering datasets:
   
-* Use UNION and UNION ALL to merge records from different sources with or without duplicates
-* Identify shared records using INTERSECT
-* Detect missing or exclusive records using EXCEPT in both directions
+  * Use UNION and UNION ALL to merge records from different sources with or without duplicates
+  * Identify shared records using INTERSECT
+  * Detect missing or exclusive records using EXCEPT in both directions
 
