@@ -18,11 +18,11 @@ The course involved hands-on exercises that focused on combining tables using di
 
 ## 📁 Project Structure
 
-sql/ → My SQL queries and JOIN practice examples
-data/ → Example datasets (if allowed to share)
-docs/ → Notes and reflections from the course
-visuals/ → Screenshots from DataCamp or analysis results
-certificate.pdf → DataCamp certificate of completion
+- sql/ → My SQL queries and JOIN practice examples
+- data/ → Example datasets (if allowed to share)
+- docs/ → Notes and reflections from the course
+- visuals/ → Screenshots from DataCamp or analysis results
+- certificate.pdf → DataCamp certificate of completion
 
 
 ## 📄 Certificate
