@@ -3,7 +3,6 @@
 This folder contains a collection of advanced SQL join exercises based on real-world business and analytics scenarios. Each file is structured into clearly labeled sections with use cases ranging from operational hierarchies to business-critical analysis.
 
 
-
 ## 📄 SQL Files
 
 - [01_inner_join.sql](01_inner_join.sql) – INNER JOIN examples combining geographic, economic, and language data  
@@ -12,8 +11,8 @@ This folder contains a collection of advanced SQL join exercises based on real-w
 - [04_self_join.sql](04_self_join.sql) – SELF JOIN queries to compare hierarchies and time-based changes
 - [05_cross_join.sql](05_cross_join.sql) – CROSS JOIN queries to generate combinations and validate data completeness
 - [06_join_missing.sql](06_join_missing.sql) – Using JOINs to identify unmatched or missing records  
-- [07_join_comparison.sql](07_join_comparison.sql) – Comparison of INNER vs. OUTER JOIN results in multi-table scenarios  
-
+- [07_join_comparison.sql](07_join_comparison.sql) – Comparison of INNER vs. OUTER JOIN results in multi-table scenarios
+- [08_union_set_operations.sql](08_union_set_operations.sql) - Set theory operations using UNION, UNION ALL, INTERSECT, and EXCEPT to merge, compare, and filter datasets across years and domains
 
 
 ## 📄 SQL Files Overview
@@ -60,3 +59,10 @@ This folder contains a collection of advanced SQL join exercises based on real-w
 
   * Compare row counts and result differences across join types
   * Analyze dataset completeness and exclusivity based on join logic
+ 
+* [08_union_set_operations.sql](08_union_set_operations.sql) – Set theory operations in SQL for comparing, combining, and filtering datasets:
+  
+* Use UNION and UNION ALL to merge records from different sources with or without duplicates
+* Identify shared records using INTERSECT
+* Detect missing or exclusive records using EXCEPT in both directions
+
