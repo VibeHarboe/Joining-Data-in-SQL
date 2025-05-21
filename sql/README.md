@@ -1,3 +1,3 @@
-# Data folder
+# SQL folder
 
-This folder contains files related to data.
+This folder contains files related to sql.
