@@ -1,0 +1,48 @@
+-- #########################################################
+-- UNION operation to combine rows from separate datasets
+-- and eliminate duplicates (set-based logic)
+-- #########################################################
+
+-- ========================================================
+-- SECTION 1: UNION – Economies in 2015 and 2019
+-- ========================================================
+
+-- Combine distinct records from two snapshots of global economies
+-- Returns distinct rows only (no duplicates)
+SELECT code, year, gdp_percapita, inflation_rate
+FROM economies2015
+
+UNION
+
+SELECT code, year, gdp_percapita, inflation_rate
+FROM economies2019
+
+ORDER BY code, year;
+
+
+-- ========================================================
+-- SECTION 2: Comparing UNION vs UNION ALL – Country-Year Pairs
+-- ========================================================
+
+-- Use UNION to return unique country-year combinations from two sources
+SELECT code, year
+FROM economies
+
+UNION
+
+SELECT country_code AS code, year
+FROM populations
+
+ORDER BY code, year;
+
+
+-- Use UNION ALL to return all values including duplicates
+SELECT code, year
+FROM economies
+
+UNION ALL
+
+SELECT country_code AS code, year
+FROM populations
+
+ORDER BY code, year;
