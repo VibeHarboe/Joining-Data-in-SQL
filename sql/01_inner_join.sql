@@ -1,3 +1,8 @@
+-- 01_inner_join.sql – INNER JOIN examples combining relational data for business insights:
+-- Join cities with countries to retrieve location and regional information
+-- Link countries with economies and languages to analyze inflation and official languages
+-- Perform multi-table joins to explore year-based comparisons across data sets
+
 -- ========================================================
 -- SECTION 1: Basic INNER JOIN - cities and countries
 -- ========================================================
