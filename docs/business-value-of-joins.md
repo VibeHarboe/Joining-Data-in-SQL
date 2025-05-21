@@ -18,31 +18,81 @@ JOINs allow you to:
 
 ---
 
-## 💼 Use Cases by Department
+## 🧠 Key Business Scenarios
 
-### 🛒 Sales & Marketing
+### 1. 🔍 Churn Analysis
 
-* Combine `leads`, `campaigns`, and `conversion` tables to track ROI
-* Analyze churn by JOINing `customers` with `contracts` and `support tickets`
-* Localize campaigns using JOINs between `leads` and `regions`
+**Goal:** Understand why users leave
 
-### 👩‍💼 HR & People Analytics
+```sql
+SELECT u.id, u.signup_date, c.cancel_date, r.reason_text
+FROM users u
+LEFT JOIN cancellations c ON u.id = c.user_id
+LEFT JOIN churn_reasons r ON c.reason_code = r.code
+WHERE c.cancel_date IS NOT NULL;
+```
 
-* JOIN `employees` with `performance_reviews` to monitor engagement
-* Analyze `training completion` by department or job role
-* Detect reporting gaps using `SELF JOIN` on org charts
+**Business Insight:** Identify top reasons for churn, linked to user tenure.
 
-### 💰 Finance & Ops
+---
 
-* JOIN `invoices`, `clients`, and `payment statuses` for AR dashboards
-* Identify missing billing info using `LEFT JOIN + IS NULL`
-* Unify `vendor spend` across departments via `FULL OUTER JOIN`
+### 2. 📈 Campaign Performance
 
-### 🧠 Product & Insights
+**Goal:** Measure conversion by campaign
 
-* Combine `user_behavior` with `feature flags` to analyze adoption
-* Compare A/B test segments using JOINs on `users` and `experiments`
-* Merge feedback data with `product areas` for prioritization
+```sql
+SELECT c.campaign_name, COUNT(o.id) AS orders
+FROM campaigns c
+LEFT JOIN orders o ON o.campaign_id = c.id
+GROUP BY c.campaign_name;
+```
+
+**Business Insight:** Optimize future ad spend by identifying effective campaigns.
+
+---
+
+### 3. ⚖️ Lead Quality Scoring
+
+**Goal:** Align marketing & sales on which leads perform best
+
+```sql
+SELECT l.source, AVG(s.closed_deal) AS success_rate
+FROM leads l
+LEFT JOIN sales s ON l.id = s.lead_id
+GROUP BY l.source;
+```
+
+**Business Insight:** Prioritize high-converting lead sources.
+
+---
+
+### 4. 🌍 Multimarket Comparison
+
+**Goal:** Benchmark country/regional performance
+
+```sql
+SELECT c.country, AVG(o.revenue) AS avg_revenue
+FROM countries c
+JOIN orders o ON c.id = o.country_id
+GROUP BY c.country;
+```
+
+**Business Insight:** Localize strategy based on revenue performance.
+
+---
+
+### 5. 🧾 Full-Funnel Tracking
+
+**Goal:** Follow a user from visit to purchase
+
+```sql
+SELECT v.user_id, v.page_viewed, o.product_id, o.total_price
+FROM web_visits v
+LEFT JOIN orders o ON v.user_id = o.user_id
+WHERE v.page_viewed = 'Product Page';
+```
+
+**Business Insight:** Attribute revenue to funnel steps.
 
 ---
 
@@ -78,3 +128,16 @@ JOINs unlock automation, insight, and trust:
 * One JOIN can replace hours of manual VLOOKUPs
 * It scales from 100 to 10 million records
 * And it connects your team’s questions to the truth hidden in your tables
+
+---
+
+## 🏆 Summary
+
+JOINs are not just for combining rows. They:
+
+* Connect metrics to context
+* Support cross-functional alignment
+* Power everything from dashboards to ML features
+
+Mastering JOINs means mastering how data becomes value.
+
