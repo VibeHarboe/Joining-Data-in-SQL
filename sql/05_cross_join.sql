@@ -1,3 +1,8 @@
+-- #########################################################
+-- CROSS JOIN examples to generate combinations and 
+-- validate completeness across business and relational data
+-- #########################################################
+
 -- ========================================================
 -- SECTION 1: CROSS JOIN - Product and Region Combinations
 -- ========================================================
