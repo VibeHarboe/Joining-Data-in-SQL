@@ -67,3 +67,21 @@ INNER JOIN populations AS p
   ON c.code = p.country_code
 INNER JOIN economies AS e
   ON c.code = e.code;
+
+
+-- ========================================================
+-- SECTION 5: Correcting Multi-Table JOIN Conditions
+-- ========================================================
+
+-- Ensure that the JOIN also matches on year to avoid incorrect data pairing (e.g., Albania case)
+SELECT 
+  name, 
+  e.year, 
+  fertility_rate, 
+  unemployment_rate
+FROM countries AS c
+INNER JOIN populations AS p
+  ON c.code = p.country_code
+INNER JOIN economies AS e
+  ON c.code = e.code
+ AND p.year = e.year;
