@@ -55,3 +55,30 @@ CROSS JOIN languages AS l
 WHERE c.code IN ('PAK', 'IND')
   AND l.code IN ('PAK', 'IND')
 ORDER BY country, language;
+
+
+-- ========================================================
+-- SECTION 5: CROSS JOIN + Aggregation – Forecasting Template
+-- ========================================================
+
+-- Create a base dataset of all product-year combinations for future planning
+SELECT 
+  p.product_name,
+  y.year,
+  0 AS projected_sales
+FROM products AS p
+CROSS JOIN (SELECT 2024 AS year UNION ALL SELECT 2025 UNION ALL SELECT 2026) AS y
+ORDER BY p.product_name, y.year;
+
+
+-- ========================================================
+-- SECTION 6: CROSS JOIN - Product Options Generator
+-- ========================================================
+
+-- Generate all possible combinations of colors and sizes for a product catalog
+SELECT 
+  color.name AS color,
+  size.name AS size
+FROM colors AS color
+CROSS JOIN sizes AS size
+ORDER BY color, size;
