@@ -50,3 +50,20 @@ SELECT
 FROM countries AS l
 INNER JOIN languages AS lang
 USING (code);
+
+
+-- ========================================================
+-- SECTION 4: Joining Multiple Tables - Fertility vs. Unemployment
+-- ========================================================
+
+-- Combining countries, populations, and economies tables to analyze fertility and unemployment rates
+SELECT 
+  name, 
+  e.year, 
+  fertility_rate, 
+  e.unemployment_rate
+FROM countries AS c
+INNER JOIN populations AS p
+  ON c.code = p.country_code
+INNER JOIN economies AS e
+  ON c.code = e.code;
