@@ -1,9 +1,7 @@
--- 02_left_right_join.sql – LEFT and RIGHT JOIN use cases for partial matches and inclusive analysis:
--- Retrieve all cities even if country data is missing (LEFT JOIN)
--- Aggregate GDP per region using LEFT JOIN and GROUP BY
--- Identify missing data using LEFT JOIN with IS NULL
--- Demonstrate equivalency of RIGHT JOIN and LEFT JOIN with reversed tables
-
+-- #########################################################
+-- LEFT and RIGHT JOIN examples for inclusive joins,
+-- handling NULLs, and demonstrating join equivalency
+-- #########################################################
 
 -- ========================================================
 -- SECTION 1: LEFT JOIN - Cities and Countries
