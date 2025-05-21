@@ -3,6 +3,7 @@
 -- Link countries with economies and languages to analyze inflation and official languages
 -- Perform multi-table joins to explore year-based comparisons across data sets
 
+
 -- ========================================================
 -- SECTION 1: Basic INNER JOIN - cities and countries
 -- ========================================================
