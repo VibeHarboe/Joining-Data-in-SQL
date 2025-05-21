@@ -5,9 +5,9 @@ This folder contains files related to sql.
 
 ## 🧪 SQL Examples
 
-- [01_inner_join.sql](01_inner_join.sql) – Basic INNER JOIN between customers and orders  
-- [02_left_right_join.sql](02_left_right_join.sql) – LEFT and RIGHT JOIN examples including aggregation and equivalency  
-- [03_full_join.sql](03_full_join.sql) – FULL OUTER JOIN to combine all records from both tables  
+- [01_inner_join.sql](01_inner_join.sql) – Basic INNER JOIN examples combining cities, countries, and economic data 
+- [02_left_right_join.sql](02_left_right_join.sql) – LEFT and RIGHT JOIN examples including aggregation and equivalency 
+- [03_full_join.sql](03_full_join.sql) – FULL OUTER JOIN examples to identify unmatched data, classify match status, and analyze join coverage
 - [04_self_join.sql](04_self_join.sql) – SELF JOIN to connect rows within the same table (e.g., employee-manager)  
 - [05_cross_join.sql](.05_cross_join.sql) – CROSS JOIN to generate all combinations of rows  
 - [06_join_missing.sql](06_join_missing.sql) – Using JOINs to identify unmatched or missing records  
