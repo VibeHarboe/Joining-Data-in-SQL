@@ -1,9 +1,7 @@
--- 03_full_join.sql – FULL OUTER JOIN examples to analyze unmatched data and join coverage:
--- Combine countries with currencies and languages to examine data completeness
--- Identify unmatched country or currency records
--- Classify match status using CASE logic and count distributions
--- Chain multiple FULL JOINs to explore regional relationships (e.g., Melanesia, Micronesia)
-
+-- #########################################################
+-- FULL OUTER JOIN examples to analyze unmatched data,
+-- classify match status, and explore regional relationships
+-- #########################################################
 
 -- ========================================================
 -- SECTION 1: FULL OUTER JOIN - Countries and Currencies (North America)
