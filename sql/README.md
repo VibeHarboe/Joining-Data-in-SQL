@@ -18,7 +18,7 @@ This folder contains a collection of advanced SQL join exercises based on real-w
 
 ## 📄 SQL Files Overview
 
-* **01\_inner\_join.sql** – INNER JOIN examples combining geographic, economic, and language data:
+* [01_inner_join.sql](01_inner_join.sql) – INNER JOIN examples combining geographic, economic, and language data:
 
   * Link cities with countries to analyze regional characteristics
   * Join countries with economies and languages to retrieve contextual information
