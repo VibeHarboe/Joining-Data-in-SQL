@@ -3,6 +3,7 @@
 -- Compare population data for the same country across different years (e.g., 2010 vs 2015)
 -- Calculate and rank population growth percentages using self joins and CTEs
 
+
 -- ========================================================
 -- SECTION 1: SELF JOIN - Employees and Managers
 -- ========================================================
