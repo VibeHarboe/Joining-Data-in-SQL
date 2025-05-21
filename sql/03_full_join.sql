@@ -83,3 +83,22 @@ FULL OUTER JOIN currencies AS cur
   ON c.code = cur.code
 GROUP BY status
 ORDER BY count DESC;
+
+
+-- ========================================================
+-- SECTION 6: Chaining FULL OUTER JOINs - Countries, Languages, and Currencies
+-- ========================================================
+
+-- Combine countries with languages and currencies using consecutive FULL OUTER JOINs
+-- Useful for wide coverage in regional or linguistic research (e.g., Melanesia & Micronesia)
+SELECT 
+  c1.code,
+  c1.name AS country,
+  l.language,
+  cur.name AS currency
+FROM countries AS c1
+FULL OUTER JOIN languages AS l
+  ON c1.code = l.code
+FULL OUTER JOIN currencies AS cur
+  ON c1.code = cur.code
+ORDER BY country, language;
