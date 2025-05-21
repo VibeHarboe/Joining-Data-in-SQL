@@ -1,20 +1,20 @@
-🔗 Joining Data in SQL  
+# 🔗 Joining Data in SQL  
 Combining relational data using INNER, OUTER, SELF, and CROSS JOINs, plus techniques for handling mismatched and incomplete records.
 
-🧠 Project Description  
+## 🧠 Project Description  
 This project documents my completion of the DataCamp course *Joining Data in SQL*.  
 The objective was to master SQL JOIN operations to integrate relational datasets and uncover actionable insights.
 
 The course included hands-on SQL exercises that emphasized joining strategies, data validation, and working with NULLs and unmatched records across tables.
 
-🧰 Key Skills Acquired  
+## 🧰 Key Skills Acquired  
 - SQL JOINs: `INNER`, `LEFT`, `RIGHT`, `FULL`  
 - `SELF JOIN` and `CROSS JOIN`  
 - Multi-table data analysis  
 - Relational data integration  
 - Detecting and handling mismatched or missing data  
 
-📁 Project Structure  
+## 📁 Project Structure  
 - `sql/` → Practice-ready SQL queries grouped by JOIN type  
 - `data/` → Example datasets (if shareable)  
 - `docs/` → Technical notes and JOIN-type explanations  
