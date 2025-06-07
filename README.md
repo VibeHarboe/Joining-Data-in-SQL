@@ -26,6 +26,9 @@ The course included hands-on SQL exercises that emphasized joining strategies, d
 
 🔗 View certificate: [DataCamp: Joining Data in SQL](https://www.datacamp.com/statement-of-accomplishment/course/3d78541dca3375aba630b95f0fe8e01ee0112f4c?raw=1)
 
+![Joining Data in SQL](https://github.com/VibeHarboe/Joining-Data-in-SQL/blob/8c550ad556af45bb14591e69105d8ff75c5ca72f/visuals/Joining%20Data%20in%20SQL.png "Joining Data in SQL")
+
+
 ## 📚 Resources
 
 - [DataCamp: Joining Data in SQL](https://www.datacamp.com/courses/joining-data-in-sql)
