@@ -8,4 +8,4 @@
 
 $~$
 
-![Joining Data in SQL](https://github.com/VibeHarboe/Exploratory-Data-Analysis-in-SQL/blob/ec2ca772aa0d7d040e032cca6569ebd8be341725/visuals/Exploratory%20Data%20Analysis%20in%20SQL.png "Exploratory Data Analysis in SQL")
+![Joining Data in SQL](https://github.com/VibeHarboe/Joining-Data-in-SQL/blob/b8897df5d44a0693c89080c6f66c01326d76b67e/visuals/Joining%20Data%20in%20SQL.png "Joining Data in SQL")
