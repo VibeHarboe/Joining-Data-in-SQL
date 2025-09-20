@@ -18,8 +18,8 @@ The course included hands-on SQL exercises that emphasized joining strategies, d
 - `sql/` → Practice-ready SQL queries grouped by JOIN type  
 - `data/` → Example datasets (if shareable)  
 - `docs/` → Technical notes and JOIN-type explanations  
-- `visuals/` → Query results and screenshots from exercises  
-- `certificate.pdf` → Certificate of course completion
+- `visuals/` → Query results and screenshots from exercises
+- `certificate/` → Course certificate and supporting README
 
 
 ## 📄 Certificate
