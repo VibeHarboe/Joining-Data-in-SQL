@@ -39,8 +39,8 @@ SELECT
   e.inflation_rate
 FROM countries AS c
 INNER JOIN economies AS e
-  ON c.code = e.code;
-
+  ON c.code = e.code
+WHERE e.year IN (2010, 2015);
 
 -- ========================================================
 -- SECTION 3: USING Clause - Official vs. Unofficial Languages
