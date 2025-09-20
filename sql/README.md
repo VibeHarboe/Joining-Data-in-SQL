@@ -12,7 +12,7 @@ This folder contains a collection of advanced SQL join exercises based on real-w
 - [05_cross_join.sql](05_cross_join.sql) – CROSS JOIN queries to generate combinations and validate data completeness
 - [06_join_missing.sql](06_join_missing.sql) – Using JOINs to identify unmatched or missing records  
 - [07_join_comparison.sql](07_join_comparison.sql) – Comparison of INNER vs. OUTER JOIN results in multi-table scenarios
-- [08_union_set_operations.sql](08_set_operations.sql) - Set theory operations using UNION, UNION ALL, INTERSECT, and EXCEPT to merge, compare, and filter datasets
+- [08_set_operations.sql](08_set_operations.sql) - Set theory operations using UNION, UNION ALL, INTERSECT, and EXCEPT to merge, compare, and filter datasets
 - [09_subqueries.sql](09_subqueries.sql) - Subqueries used in SELECT, FROM, and WHERE clauses to calculate, filter, and compare complex data relationships
 
 
