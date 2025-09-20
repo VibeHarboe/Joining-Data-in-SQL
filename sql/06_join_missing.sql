@@ -19,16 +19,16 @@ ORDER BY country_name;
 
 
 -- ========================================================
--- SECTION 2: RIGHT JOIN with IS NULL - Missing Country Data
+-- SECTION 2: LEFT JOIN with IS NULL - Missing Country Data
 -- ========================================================
 
 -- Identify currencies that do not have a corresponding country entry
-SELECT 
+SELECT
   cur.code AS currency_code,
   cur.name AS currency_name
 FROM currencies AS cur
-RIGHT JOIN countries AS c
-  ON c.code = cur.code
+LEFT JOIN countries AS c
+  ON cur.code = c.code
 WHERE c.code IS NULL
 ORDER BY currency_name;
 
